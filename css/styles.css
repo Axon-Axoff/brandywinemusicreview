@@ -1,0 +1,419 @@
+/* =========================================================
+   BASE ELEMENTS
+   ========================================================= */
+
+body {
+  background-color: #002244;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =========================================================
+   UTILITY COLORS
+   ========================================================= */
+
+.body-bg-color {
+  background-color: #002244;
+}
+
+.body-text-color {
+  color: #002244;
+}
+
+.burnt-orange-bg {
+  background-color: #cc8400;
+}
+
+.burnt-orange-text {
+  color: #cc8400;
+}
+
+.muted-light-blue {
+  background-color: #ccccee;
+}
+
+.muted-light-red {
+  background-color: #eecccc;
+}
+
+.soft-gray {
+  background-color: #bbbbbb;
+}
+
+/* =========================================================
+   LAYOUT: NAVBAR & FOOTER
+   ========================================================= */
+
+/* NAVBAR */
+.navbar-custom {
+  background: url("/images/navbar-bg.png") repeat-x center center;
+  background-size: auto 80px;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000;
+}
+
+/* FOOTER */
+.footer-custom {
+  background: url("/images/navbar-bg.png") repeat-x center center;
+  background-size: auto 80px;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+}
+
+/* TOGGLER ICON */
+.navbar-dark .navbar-toggler {
+  border: none;
+}
+
+/* Target dropdown menus inside the navbar */
+.navbar .dropdown-menu.user-dropdown {
+  background-color: #003366 !important;
+  border: none !important;
+  min-width: 170px;
+}
+
+.navbar .dropdown-menu.user-dropdown .dropdown-item {
+  color: #bfc8d8 !important;
+  text-align: right;
+}
+
+.navbar .dropdown-menu.user-dropdown .dropdown-item:hover,
+.navbar .dropdown-menu.user-dropdown .dropdown-item:focus {
+  color: #ffffff !important;
+  background-color: #002244 !important;
+}
+
+.navbar .dropdown-menu.user-dropdown .dropdown-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.button-green-outline {
+  background-color: white;
+  border: solid 1px #004422;
+  color: #004422;
+}
+
+.button-green-outline:hover {
+  background-color: #ccddcc;
+  border: solid 1px #003311;
+  color: #003311;
+}
+
+.button-green {
+  background-color: #004422;
+  color: white;
+}
+
+.button-green:hover {
+  background-color: #003311;
+}
+
+.listen-button:hover {
+  background-color: #001f40;
+}
+
+.update-link-button:hover {
+  background-color: #aa6200;
+}
+
+/* Sort bar buttons */
+.sort-bar .btn-sort {
+  background-color: #003366;
+  color: #d9e2f0;
+  border-radius: 4px;
+  border: none;
+  margin-right: 0.25rem;
+  margin-bottom: 3px;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+
+  /* shrink size */
+  font-size: 86%;
+  padding: 4px 6px;
+  line-height: 1.2;
+}
+
+.sort-bar .btn-sort .icon {
+  color: #001f40;
+  font-size: 86%;
+}
+
+.sort-bar .btn-sort.active {
+  background-color: #004080;
+  color: #fff;
+}
+
+.sort-bar .btn-sort.active .icon.active {
+  color: #ff8800;
+}
+
+/* =========================================================
+   LINKS & TEXT STYLES
+   ========================================================= */
+
+/* Album title link */
+.album-title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.album-title-link:hover {
+  color: #ee8822;
+  text-shadow: 0 0 6px rgba(167, 215, 162, 0.9);
+}
+
+/* Meta links (artist, genre, release year, added_by) */
+.album-meta-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.album-meta-link:hover {
+  color: #ee8822;
+  text-shadow: 0 0 6px rgba(167, 215, 162, 0.8);
+}
+
+/* General page link styling for pagination */
+.pagination .page-link {
+  font-size: 85%;
+  padding: 4px 10px;
+  color: #003366;
+  border: 1px solid #003366;
+  background-color: #ffffff;
+}
+
+/* Active page */
+.pagination .page-item.active .page-link {
+  background-color: #003366 !important;
+  border-color: #003366 !important;
+  color: #ffffff !important;
+}
+
+/* Disabled (ellipses, prev/next) */
+.pagination .page-item.disabled .page-link {
+  color: #666;
+  border-color: #ccc;
+  background-color: #f8f9fa;
+}
+
+/* Comment badge */
+.comment-badge {
+  background-color: #333;
+  color: #cc8400;
+  padding: 6px 8px;
+  font-size: 0.8rem;
+  border-radius: 4px;
+}
+
+/* Hover backgrounds */
+.comment-bg-hover {
+  background-color: white;
+}
+
+.comment-bg-hover:hover {
+  background-color: #aaaaee;
+}
+
+.hover-blue:hover {
+  background-color: #aaaaee;
+}
+
+/* =========================================================
+   BOXES / PANELS
+   ========================================================= */
+
+.album-info-box {
+  background-color: none;
+  margin: 0 0 15px 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.listen-box {
+  background-color: #222;
+  margin: 15px 0 25px 0;
+  padding: 15px 8px;
+  border-radius: 10px;
+}
+
+.latest-activity-box {
+  background-color: #ffcccc;
+  border-radius: 8px;
+}
+
+.member-box {
+  background-color: #eeccaa;
+  border-radius: 8px;
+}
+
+.latest-activity-box:hover {
+  background-color: #eebbbb;
+}
+
+.member-box:hover {
+  background-color: #ddbb99;
+}
+
+/* Thread tab (sidebar tab/button) */
+.thread-tab {
+  background-color: #337ab7;
+  color: #fff;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  padding: 6px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 36px;
+}
+
+.thread-tab button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.thread-tab small {
+  font-size: 0.7rem;
+}
+
+/* =========================================================
+   FORMS & CHECKBOXES/RADIOS
+   ========================================================= */
+
+.form-check-label {
+  width: 100%;
+}
+
+.offcanvas-body .form-check-label {
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.offcanvas-body .form-check-label:hover {
+  background-color: #002244;
+  color: #fff;
+}
+
+/* Square radios look like checkboxes */
+.square-radio {
+  border-radius: 0 !important;
+  width: 18px;
+  height: 18px;
+}
+
+/* match genres checkboxes */
+.rounded-check {
+  border-radius: 0.25rem;
+}
+
+/* =========================================================
+   CUSTOM SCROLLBARS
+   ========================================================= */
+
+.custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #666 #333;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #333;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 3px;
+}
+
+/* =========================================================
+   MEDIA QUERIES
+   ========================================================= */
+
+/* Extra small screens */
+@media (max-width: 405px) {
+  .shrink-on-small {
+    max-width: 320px !important;
+  }
+}
+
+/* Mobile / tablet navbar overrides only (below lg) */
+@media (max-width: 991.98px) {
+  /* lg breakpoint */
+  .navbar-collapse {
+    position: absolute !important;
+    top: 80px;
+    right: 0;
+    width: 170px;
+    background-color: #003366;
+    border-radius: 0 0 4px 4px;
+    padding: 0.5rem 0;
+    z-index: 1050;
+    display: none !important; /* hidden until open */
+  }
+
+  .navbar-collapse.show {
+    display: block !important;
+  }
+
+  .navbar-collapse .nav-link,
+  .navbar-collapse .dropdown-item {
+    text-align: right;
+    color: #bfc8d8;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-collapse .nav-link:hover,
+  .navbar-collapse .dropdown-item:hover {
+    color: #ffffff;
+    background-color: #002244;
+  }
+}
+
+/* Small screens and up (sm+) */
+@media (min-width: 576px) {
+  /* sm and up */
+  .album-info-box {
+    background-color: #fcfcf3;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    border-color: #222;
+    border: solid 2px;
+  }
+
+  .listen-box {
+    background-color: #222;
+    color: #ccc;
+    margin: 10px 25px 25px 25px;
+    padding: 25px;
+    border-radius: 12px;
+  }
+}

@@ -1,0 +1,30 @@
+# -----------------------------------------
+# Secrets / environment
+# -----------------------------------------
+.env
+.htaccess
+
+# -----------------------------------------
+# Uploads: keep folders, ignore contents
+# -----------------------------------------
+# Ignore everything in uploads/
+uploads/*
+# But keep the uploads folder marker
+!uploads/.gitkeep
+
+# Ignore everything in uploads/profiles/
+uploads/profiles/*
+# But keep the profiles folder marker
+!uploads/profiles/.gitkeep
+
+# -----------------------------------------
+# Images
+# -----------------------------------------
+# Ignore specific subfolders entirely
+images/2025-09/
+images/work/
+
+# Keep all other images, but ignore album_* files
+# (anywhere under images/)
+images/**/album_*
+

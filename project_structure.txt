@@ -1,0 +1,59 @@
+.
+├── core
+│   ├── functions.php
+│   └── initialize_data.php
+├── css
+│   └── styles.css
+├── database
+│   └── musicdb_dump.sql
+├── .env
+├── favicon.ico
+├── .htaccess
+├── images
+│   ├── 2025-09
+│   │   ├── album_1.jpg
+│   │   ├── ...
+│   │   └── album_133.jpg
+│   ├── add-music.png
+│   ├── ...
+│   └── upload-icon.png
+├── index.php
+├── templates
+│   ├── add_music_template.php
+│   ├── album_list_template.php
+│   ├── album_template.php
+│   ├── footer_template.php
+│   ├── header_template.php
+│   ├── login_template.php
+│   ├── main_template.php
+│   ├── members_list_template.php
+│   ├── messages_template.php
+│   ├── nav_template.php
+│   ├── player_modal.php
+│   ├── profile_template.php
+│   ├── register_user_template.php
+│   ├── song_list_template.php
+│   ├── song_template.php
+│   └── youtube_modal.php
+├── uploads
+│   ├── albums
+│   ├── profiles
+│   │   ├── generic.png
+│   │   ├── ...
+│   │   └── user_12.png
+│   └── songs
+└── views
+    ├── add_music_view.php
+    ├── album_list_view.php
+    ├── album_view.php
+    ├── home_view.php
+    ├── login_view.php
+    ├── logout_view.php
+    ├── members_list_view.php
+    ├── messages_view.php
+    ├── profile_view.php
+    ├── register_user_view.php
+    ├── song_list_view.php
+    └── song_view.php
+
+13 directories, 213 files
